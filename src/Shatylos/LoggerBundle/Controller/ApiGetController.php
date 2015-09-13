@@ -3,7 +3,6 @@
 namespace Shatylos\LoggerBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
@@ -19,10 +18,10 @@ class ApiGetController extends Controller
      */
     public function getFileListAction()
     {
-        $response = array(
+        $data = array(
             // ...
         );
-        return new Response(json_encode($response));
+        return $this->get('shatylos_logger.response.service')->jsonResponse(true, $data);
     }
 
     /**
@@ -31,10 +30,10 @@ class ApiGetController extends Controller
      */
     public function getFileDetailAction()
     {
-        $response = array(
+        $data = array(
             // ...
         );
-        return new Response(json_encode($response));
+        return $this->get('shatylos_logger.response.service')->jsonResponse(true, $data);
     }
 
     /**
@@ -43,10 +42,10 @@ class ApiGetController extends Controller
      */
     public function getFilesDetailAction()
     {
-        $response = array(
+        $data = array(
             // ...
         );
-        return new Response(json_encode($response));
+        return $this->get('shatylos_logger.response.service')->jsonResponse(true, $data);
     }
 
     /**
@@ -55,10 +54,10 @@ class ApiGetController extends Controller
      */
     public function getUsersListAction()
     {
-        $response = array(
+        $data = array(
             // ...
         );
-        return new Response(json_encode($response));
+        return $this->get('shatylos_logger.response.service')->jsonResponse(true, $data);
     }
 
     /**
@@ -67,10 +66,10 @@ class ApiGetController extends Controller
      */
     public function searchAction()
     {
-        $response = array(
+        $data = array(
             // ...
         );
-        return new Response(json_encode($response));
+        return $this->get('shatylos_logger.response.service')->jsonResponse(true, $data);
     }
 
 }

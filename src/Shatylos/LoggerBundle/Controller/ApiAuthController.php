@@ -3,7 +3,6 @@
 namespace Shatylos\LoggerBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
@@ -22,10 +21,10 @@ class ApiAuthController extends Controller
      */
     public function signInAction()
     {
-        $response = array(
+        $data = array(
             // ...
         );
-        return new Response(json_encode($response));
+        return $this->get('shatylos_logger.response.service')->jsonResponse(true, $data);
     }
 
     /**
@@ -34,10 +33,10 @@ class ApiAuthController extends Controller
      */
     public function signOutAction()
     {
-        $response = array(
+        $data = array(
             // ...
         );
-        return new Response(json_encode($response));
+        return $this->get('shatylos_logger.response.service')->jsonResponse(true, $data);
     }
 
     /**
@@ -46,10 +45,10 @@ class ApiAuthController extends Controller
      */
     public function chooseUserAction()
     {
-        $response = array(
+        $data = array(
             // ...
         );
-        return new Response(json_encode($response));
+        return $this->get('shatylos_logger.response.service')->jsonResponse(true, $data);
     }
 
 }

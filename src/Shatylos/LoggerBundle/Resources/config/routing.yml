@@ -1,0 +1,9 @@
+shatylos_logger_web:
+    resource: Shatylos\LoggerBundle\Controller\WebController
+    prefix: /logger
+shatylos_logger_api_auth:
+    resource: Shatylos\LoggerBundle\Controller\ApiAuthController
+    prefix: /api/logger/auth
+shatylos_logger_api_get:
+    resource: Shatylos\LoggerBundle\Controller\ApiGetController
+    prefix: /api/logger/get

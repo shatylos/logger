@@ -1,0 +1,4 @@
+services:
+#    shatylos_logger.example:
+#        class: Shatylos\LoggerBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
